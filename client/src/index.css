@@ -1,0 +1,93 @@
+body{
+  background-color: black;
+}
+
+.header{
+  height: 26rem;
+  width: 100%;
+  background:
+  /* linear-gradient(to right,rgba(0,0,0,0.3),rgba(0, 251, 255, 0.1)), */
+  url(images/banner.jpg);
+  background-position:cover;
+  background-size: cover;
+
+}
+  .custom-text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.removetab li{
+  list-style: none;
+}
+
+.dropdown a{
+  text-decoration: none;
+  color:white;
+
+}
+    
+.pane {
+  list-style: none;
+}
+
+.pane li:before {
+  content: '✓';
+  color: green;
+}
+
+
+.shadowLogin{
+  box-shadow: 10px 10px 40px rgb(0, 213, 255);
+
+}
+
+.nav-tabs .nav-item .nav-link.radius {
+  border-radius: 40px; /* Adjust the value to your preferred border radius */
+}
+
+
+
+
+
+
+
+  
+
+  /* Style the image */
+   .imgcard {
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    border: 2px solid #3498db; /* Add a border */
+    border-radius: 10px; /* Add rounded corners */
+    margin-right: 20px; /* Create spacing between image and text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+ 
+  }
+  .imgcard:hover{
+    transform: scale(1.1);
+  }
+
+  /* Style the text */
+  .information h1 {
+    margin-top: 20px;
+    font-size: 30px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+    margin-bottom: 10px; /* Create spacing between title and paragraph */
+    text-shadow:0px 0px 8px #3498db;
+  }
+
+  .information p {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #777; /* Set the text color */
+  }
+
+/* Your CSS file */
+.custom-nav-link {
+  text-decoration: none; /* Remove the default underline */
+  border-bottom: none; /* Remove the bottom border */
+  color: inherit; /* Inherit the text color */
+}
+
+ @media (max-width:571px){
+
+ }
