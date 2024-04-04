@@ -157,20 +157,28 @@ const Signup = () => {
     }
     return(
         <>
-    <div className="container-fluid">
+
+        <div className='conatiner postion-relative'>
+            <div className='row p-0'>
+        {/* <div className='bg-warning rounded-circle '></div> */}
+     <div className='col-6 hh'>
+        <div className='nik rounded-circle'></div>
+     </div>
+        <div className=' p-0 px-5 col-lg-6 ajit '>
+ <div className=" text-center fordm">
       <h2 className="">Signup Page</h2>
       <div className="login">
          <form onSubmit={handleSubmit}  >
            <label htmlFor="username">Username</label><br />
-           <input type="text" name="username"  value={user.username}  onChange={handleChange}  /><br />
+           <input type="text" name="username" className='form-control'  value={user.username}  onChange={handleChange}  /><br />
 
  
 
            <label htmlFor="password">Password</label><br />
-          <input type="password" name="password" value={user.password} onChange={handleChange}  /><br />
+          <input type="password" className='form-control'  name="password" value={user.password} onChange={handleChange}  /><br />
 
            <label htmlFor="role">Role</label><br />
-           <input type="password" name="role"  value={user.role} onChange={handleChange}/><br />
+           <input type="password" name="role" className='form-control'  value={user.role} onChange={handleChange}/><br />
 
  {/* 
  //             <label htmlFor="token">token</label><br />
@@ -178,10 +186,10 @@ const Signup = () => {
 
 
            <label htmlFor="email">Email</label><br />
-          <input type="email" name="email" value={user.email} onChange={handleChange}/><br /><br />
+          <input type="email" name="email" className='form-control'  value={user.email} onChange={handleChange}/><br /><br />
 
            <label>Profilephoto</label><br />
-        <input type="file" name="Profilephoto"  onChange={handlePhoto}/><br /><br />
+        <input type="file" name="Profilephoto" className='form-control'   onChange={handlePhoto}/><br /><br />
 
         
 
@@ -191,6 +199,30 @@ const Signup = () => {
          </form>
      </div>
      </div>
+        </div>
+
+
+
+
+            </div>
+
+        </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </>
     )
 }

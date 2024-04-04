@@ -40,10 +40,10 @@ const { errorMonitor } = require('events');
 
 
 
-router.get('/',(req,res)=>{
-    res.send("HELLO WORD")
+// router.get('/',(req,res)=>{
+//     res.send("HELLO WORD")
 
-})
+// })
 // router.get('/signup',(req,res)=>{
 //     res.send('nikki')
 // })
@@ -104,7 +104,7 @@ router.post('/Contact', Authanticate, async (req, res) => {
 
 
 router.get('/Userpanel',Authanticate,(req,res)=>{
-  // console.log("this is Userpanel")
+  console.log(req.rootUser,"this is Userpanel")
   res.send(req.rootUser)
  
 })

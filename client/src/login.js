@@ -53,11 +53,12 @@ function Login(){
     return(
         <>
         
-    <div className='container row'>
-   <div className='col-md-6  text-md-end text-center'>
-    <img src={loginimg} alt="doctorlogin" className='w-75'/>
+    <div className='container '>
+    <div className=' row'>
+   <div className='col-md-6  text-md-end text-center d-none d-sm-block'>
+    <img src={loginimg} alt="doctorlogin " className='w-75 bb'/>
    </div>
-   <div className='col-md-3 shadowLogin text-center mt-3 pt-5 mb-4'>
+   <div className='col-xl-3 col-md-5 shadowLogin text-center mt-3 pt-5 mb-4 rounded-4'>
      
         <form id="login" method="post" >
           <label className='text-info'><b>Email</b></label><br/>
@@ -66,7 +67,7 @@ function Login(){
           <label><b className="mb-5 text-info">Password</b></label><br/>
           <input type="password" name="password" placeholder="Password" value={user.password} onChange={handleInputs}/><br /><br />
 
-          <button type="submit" className="bg-danger text-light" onClick={postData}>LOG IN</button><br /><br />
+          <button type="submit" className="bg-danger text-light rounded-1" onClick={postData}>LOG IN</button><br /><br />
 
           <input type="checkbox" id="check" />
           <span>Remember me</span><br /><br />
@@ -74,7 +75,9 @@ function Login(){
           <a href="/" className="justify-content-end text-end">Forgot Password?</a>
         </form>
      
-        </div></div>
+        </div>
+        </div>
+        </div>
         
         </>
     )
