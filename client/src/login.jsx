@@ -74,7 +74,7 @@ function Login() {
             </form>
 
           </div>
-          <img src={bg1} alt="doctorlogin " className='w-75 c'/>
+          {/* <img src={bg1} alt="doctorlogin " className='w-75 c'/> */}
         </div>
     </div>
       </div>
